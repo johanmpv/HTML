@@ -1,0 +1,23 @@
+.container{
+    padding-left: 40px;
+}
+.Border{
+    padding-left: 40px;
+    
+}
+.border1{
+    border-style: solid;
+    display: inline-block;
+}
+.border2{
+    border-style: dotted;
+    display: inline-block;
+}
+.border3{
+    border: 2px dashed #000;
+    display: inline-block;  
+}
+.border4{
+    border-style: double;
+    display: inline-block;
+}

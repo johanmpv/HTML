@@ -1,0 +1,58 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "NAV NAV NAV"
+        "BANNER BANNER BANNER"
+        "ROUT ROUT ASIDE"
+        "FOOTER FOOTER FOOTER";
+}
+
+.NAV {
+    background-color: red;
+    height: 150px;
+    grid-area: NAV;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.BANNER {
+    background-color: orange;
+    height: 250px;
+    grid-area: BANNER;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ROUT {
+    background-color: green;
+    height: 200px;
+    grid-area: ROUT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ASIDE {
+    background-color:blueviolet;
+    height: 200px;
+    grid-area: ASIDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FOOTER {
+    background-color: aquamarine;
+    height: 150px;
+    grid-area: FOOTER;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

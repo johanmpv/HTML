@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20PX ;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 2em;
+}
+/* Estilo base del botón */
+.boton1{
+    background-color: #2b84c0;
+    /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton2{
+    background-color: #4CAF50;
+    /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton3 {
+    background-color: #0955e0;
+    /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Pseudo-clase hover */
+.boton1:hover {
+    background-color: rgb(37, 139, 139);
+    /* Verde más oscuro */
+}
+.boton2:hover {
+    background-color: #234d25;
+}
+
+.boton3:hover {
+    background-color: rgb(67, 164, 194);
+}
+/* Pseudo-clase active */
+.boton1:active, .boton2:active, .boton3:active{
+    background-color: #3e8e41;
+    /* Verde aún más oscuro */
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Pseudo-clase focus */
+.boton1:focus, .boton2:active, .boton3:active {
+    outline: none;
+    box-shadow: 0 0 3px 3px #80c4ff;
+}

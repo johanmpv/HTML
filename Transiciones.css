@@ -1,0 +1,13 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    transition: 
+    widht 3s,
+    background-color 0.5s;
+}
+
+.container:hover{
+    width: 100%;
+    background-color: deeppink;
+}

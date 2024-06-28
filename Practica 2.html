@@ -1,136 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas de Calificaciones</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        table {
-            width: 45%;
-            margin: 10px;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        caption {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        .table2 {
-            align-self: flex-end;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <table class="table1">
-            <caption>Calificaciones de Estudiantes - Tabla 1</caption>
-            <thead>
-                <tr>
-                    <th>Estudiante</th>
-                    <th>Matemáticas</th>
-                    <th>Historia</th>
-                    <th>Ciencias</th>
-                    <th>Lengua</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Juan Pérez</td>
-                    <td>85</td>
-                    <td>90</td>
-                    <td>88</td>
-                    <td>92</td>
-                </tr>
-                <tr>
-                    <td>María López</td>
-                    <td>78</td>
-                    <td>85</td>
-                    <td>82</td>
-                    <td>88</td>
-                </tr>
-                <tr>
-                    <td>Carlos Sánchez</td>
-                    <td>92</td>
-                    <td>87</td>
-                    <td>90</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                    <td>Luisa Gómez</td>
-                    <td>88</td>
-                    <td>92</td>
-                    <td>85</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>Pedro Fernández</td>
-                    <td>75</td>
-                    <td>80</td>
-                    <td>78</td>
-                    <td>85</td>
-                </tr>
-            </tbody>
-        </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablas de Calificaciones</title>
+        <link rel="stylesheet" href="Practica 2.css">
+    </head>
+    <body>
+        <div class="container">
+            <table class="table1">
+                <caption>Calificaciones de Estudiantes</caption>
+                <thead>
+                    <tr>
+                        <th>Estudiante</th>
+                        <th>Matemáticas</th>
+                        <th>Historia</th>
+                        <th>Ciencias</th>
+                        <th>Lengua</th>
 
-        <table class="table2">
-            <caption>Calificaciones de Estudiantes - Tabla 2</caption>
-            <thead>
-                <tr>
-                    <th>Estudiante</th>
-                    <th>Matemáticas</th>
-                    <th>Historia</th>
-                    <th>Ciencias</th>
-                    <th>Lengua</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Juan Pérez</td>
-                    <td>85</td>
-                    <td>90</td>
-                    <td>88</td>
-                    <td>92</td>
-                </tr>
-                <tr>
-                    <td>María López</td>
-                    <td>78</td>
-                    <td>85</td>
-                    <td>82</td>
-                    <td>88</td>
-                </tr>
-                <tr>
-                    <td>Carlos Sánchez</td>
-                    <td>92</td>
-                    <td>87</td>
-                    <td>90</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                    <td>Luisa Gómez</td>
-                    <td>88</td>
-                    <td>92</td>
-                    <td>85</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>Pedro Fernández</td>
-                    <td>75</td>
-                    <td>80</td>
-                    <td>78</td>
-                    <td>85</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>María López</td>
+                        <td>78</td>
+                        <td>85</td>
+                        <td>82</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Sánchez</td>
+                        <td>92</td>
+                        <td>87</td>
+                        <td>90</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Luisa Gómez</td>
+                        <td>88</td>
+                        <td>92</td>
+                        <td>85</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Fernández</td>
+                        <td>75</td>
+                        <td>80</td>
+                        <td>78</td>
+                        <td>85</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table2">
+                <caption>Calendario</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Año</th>
+                        <th rowspan="2">Mes</th>
+                        <th rowspan="2">Día</th>
+                        <th rowspan="2">Fecha</th>
+                        <th rowspan="2">Añadir</th>
+                        <th colspan="4">Horario</th>
+                    </tr>
+                    <tr>
+                        <th>Inicio</th>
+                        <th>Final</th>
+                        <th>Inicio</th>
+                        <th>Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="6"> 2024</td>
+                        <td rowspan="3">Junio</td>
+                        <td>Viernes</td>
+                        <td>28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td>Sabado </td>
+                        <td>29</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Domingo </td>
+                        <td>30</td>
+                        <td>+</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Mayo</td>
+                        <td>Lunes </td>
+                        <td>1</td>
+                        <td>+</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Marte</td>
+                        <td>2</td>
+                        <td>+</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>3</td>
+                        <td>+</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>

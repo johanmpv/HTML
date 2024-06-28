@@ -1,45 +1,186 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISTAS ANIDADAS</title>
-</head>    
-<body>
-    LISTAS ANIDADAS
-    <h1>Lista de Contenido</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LISTAS ANIDADAS</title>
+        <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>LISTAS ANIDADAS</h1>
 
-        <ul>
-            <li>CAPITULO 1: introduccion</li>
-            <ul>
-                <li>Seccion 1.1: Objetivos del Documento</li>
-                <li>Seccion 1.2: Alcance del Documento</li>
+        <div class="row">
+            <div class="column">
+                <h1>Lista de Contenido 1</h1>
                 <ul>
-                    <li>Sub-Seccion 1.2.1 Definicion de terminos</li>
-                    <li>Sub-Seccion 1.2.2 Contexto Historico</li>
+                    <li>CAPITULO 1: introduccion</li>
+                    <ul>
+                        <li>Seccion 1.1: Objetivos del Documento</li>
+                        <li>Seccion 1.2: Alcance del Documento</li>
+                        <ul>
+                            <li>Sub-Seccion 1.2.1 Definicion de terminos</li>
+                            <li>Sub-Seccion 1.2.2 Contexto Historico</li>
+                        </ul>
+                    </ul>
+                    <li>CAPITULO 2: Desarrollo del tema</li>
+                    <ul>
+                        <li>Seccion 2.1: Antecedentes</li>
+                        <li>Seccion 2.2: Metodologia de investigacion</li>
+                        <ul>
+                            <li>Sub-Seccion 2.2.1 Recopilacion de Datos</li>
+                            <li>Sub-Seccion 2.2.2 Analisis Estadistico</li>
+                        </ul>
+                    </ul>
+                    <li>CAPITULO 3: Conclusiones</li>
+                    <ul>
+                        <li>Seccion 3.1: Hallazgos Principales</li>
+                        <li>Seccion 3.2: Limitaciones del Estudio</li>
+                        <ul>
+                            <li>Sub-Seccion 3.2.1 Definicion de terminos</li>
+                            <li>Sub-Seccion 3.2.2 Contexto Historico</li>
+                        </ul>
+                    </ul>
                 </ul>
-            </ul>
+            </div>
 
-            <li>CAPITULO 2: Desarrollo del tema</li>
-            <ul>
-                <li>Seccion 2.1: Antecedentes</li>
-                <li>Seccion 2.2: Metodologia de investigacion</li>
+            <div class="column">
+                <h1>Menu de navegacion</h1>
                 <ul>
-                    <li>Sub-Seccion 2.2.1 Recopilacion de Datos</li>
-                    <li>Sub-Seccion 2.2.2 Analisis Estadistico</li>
-                </ul>
-            </ul>
+                    <a href><li>Inicio</li></a>
 
-            <li>CAPITULO 3: Conclusiones</li>
-            <ul>
-                <li>Seccion 3.1: Hallazgos Principales</li>
-                <li>Seccion 3.2: Limitaciones del Estudio</li>
-                <ul>
-                    <li>Sub-Seccion 3.2.1 Definicion de terminos</li>
-                    <li>Sub-Seccion 3.2.2 Contexto Historico</li>
+                    <a href><li>Acerca de Nosotros</li></a>
+
+                    <a href><li>Servicios</li></a>
+
+                    <a href><li>Blog</li></a>
+
+                    <a href><li>Contacto</li></a>
+
                 </ul>
-            </ul>
-        </ul>
-</body>
+            </div>
+
+            <div class="column">
+                <h1>Menu Despegable</h1>
+                <ul>
+                    <a href><li>Inicio</li></a>
+
+                    <a href><li>Productos</li></a>
+                    <ul>
+                        <a href> <li>Electronica</li></a>
+                        <a href><li>Ropa</li></a>
+                        <a href><li>Hogar</li></a>
+
+                    </ul>
+                    <a href><li>Acerca de Nosotros</li></a>
+
+                    <a href><li>Contacto</li></a>
+
+                </ul>
+            </div>
+
+            <div class="column">
+                <h1>Arbol de Navegacion</h1>
+                <ul>
+                    <li>Directorio A</li>
+                    <ul>
+                        <li>Subdirectorio A1</li>
+                        <li>Subdirectorio A2</li>
+                        <ul>
+                            <li>Subsubdirectorio A2.1</li>
+                            <li>Subsubdirectorio A2.2</li>
+                        </ul>
+                    </ul>
+                    <li>Directorio B</li>
+                    <ul>
+                        <li>Subdirectorio B1</li>
+
+                    </ul>
+                    <li>Directorio C</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h1>Lista de Contenido 5</h1>
+                <ol start="4" reversed>
+                    <li>Registrar una Cuenta</li>
+                    <li>Verificar el correo electronico</li>
+                    <li>Iniciar session</li>
+                    <li>Configurar perfil</li>
+                </ol>
+            </div>
+
+            <div class="column">
+                <h1>Arbol geneologico y Amigos</h1>
+                <ul>
+                    <li>Familia</li>
+                    <ul>
+                        <li>Padre</li>
+                        <li>Madre</li>
+                        <ul>
+                            <li>Hijo</li>
+                            <li>Hija</li>
+                            <ul>
+                                <li>Nietos</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li>Amigos</li>
+
+                </ul>
+            </div>
+
+            <div class="column">
+                <h1>Items Almacen</h1>
+                <ul>
+                    <li>Electronica</li>
+                    <ul>
+                        <li>Smartphones</li>
+                        <li>Laptops</li>
+                        <li>Accesorios</li>
+                    </ul>
+                    <li>Ropa</li>
+                    <ul>
+                        <li>Hombre</li>
+                        <li>Mujer</li>
+                        <li>Niños</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h1>FAQ</h1>
+                <ul>
+                    <li></li>
+                    <h2>Pregunta 1</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetuar adipisicing
+                        elit. Laboriosam, quidem? Nisi reprehenderit quaret
+                        culpa</p>
+                    <li></li>
+                    <h2>Pregunta 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetuar adipisicing
+                        elit. Odio, sequi commodi assumenda, consequuntur facere
+                        ipsam distinctio</p>
+                    <li></li>
+                    <h2>Pregunta 3</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetuar adipisicing
+                        elit. Eos, fuga deleniti dolore quasi sequi vero
+                        blanditiis</p>
+
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>

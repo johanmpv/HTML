@@ -1,0 +1,23 @@
+.container{
+    padding-left: 30px;
+}
+
+h3{
+    font-size: 2em
+}
+h4{
+    font-size: 2em
+}
+.verde{
+    background-color: rgba(155, 154, 154, 0.5);
+    color: green;
+    margin-bottom: 10px;
+    font-size: 1.5em
+}
+
+.naranja {
+    background-color: rgba(155, 154, 154, 0.5);
+    color: orange ;
+    margin-bottom: 10px;
+    font-size: 1.5em
+}
